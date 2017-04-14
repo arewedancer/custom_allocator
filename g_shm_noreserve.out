@@ -1,0 +1,393 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 16.11      0.09     0.09 26777215     0.00     0.00  void std::allocator_traits<ShmAllocator<int> >::destroy<int>(ShmAllocator<int>&, int*)
+ 16.11      0.18     0.09 16777215     0.00     0.00  std::enable_if<std::__and_<std::__and_<std::__not_<std::allocator_traits<ShmAllocator<int> >::__construct_helper<int, int>::type>, std::is_constructible<int, int> > >::value, void>::type std::allocator_traits<ShmAllocator<int> >::_S_construct<int, int>(ShmAllocator<int>&, int*, int&&)
+  8.05      0.23     0.05       26     1.73     6.72  void std::_Destroy<int*, ShmAllocator<int> >(int*, int*, ShmAllocator<int>&)
+  7.16      0.27     0.04 10000000     0.00     0.00  decltype (_S_construct({parm#1}, {parm#2}, (forward<int const&>)({parm#3}))) std::allocator_traits<ShmAllocator<int> >::construct<int, int const&>(ShmAllocator<int>&, int*, int const&)
+  7.16      0.31     0.04       25     1.60    10.96  int* std::__uninitialized_copy_a<std::move_iterator<int*>, int*, ShmAllocator<int> >(std::move_iterator<int*>, std::move_iterator<int*>, int*, ShmAllocator<int>&)
+  5.37      0.34     0.03 33554480     0.00     0.00  std::move_iterator<int*>::base() const
+  5.37      0.37     0.03 26777215     0.00     0.00  std::enable_if<std::__and_<std::__not_<std::allocator_traits<ShmAllocator<int> >::__destroy_helper<int>::type> >::value, void>::type std::allocator_traits<ShmAllocator<int> >::_S_destroy<int>(ShmAllocator<int>&, int*)
+  5.37      0.40     0.03 16777240     0.00     0.00  bool std::operator!=<int*>(std::move_iterator<int*> const&, std::move_iterator<int*> const&)
+  4.47      0.42     0.03 20000025     0.00     0.00  int const& std::forward<int const&>(std::remove_reference<int const&>::type&)
+  3.58      0.44     0.02 33554430     0.00     0.00  int&& std::forward<int>(std::remove_reference<int>::type&)
+  3.58      0.46     0.02 26777215     0.00     0.00  operator new(unsigned long, void*)
+  3.58      0.48     0.02 16777215     0.00     0.00  std::move_iterator<int*>::operator++()
+  3.58      0.50     0.02 10000000     0.00     0.00  std::enable_if<std::__and_<std::__and_<std::__not_<std::allocator_traits<ShmAllocator<int> >::__construct_helper<int, int const&>::type>, std::is_constructible<int, int const&> > >::value, void>::type std::allocator_traits<ShmAllocator<int> >::_S_construct<int, int const&>(ShmAllocator<int>&, int*, int const&)
+  2.68      0.52     0.02 43554430     0.00     0.00  int* std::__addressof<int>(int&)
+  2.68      0.53     0.02 16777215     0.00     0.00  decltype (_S_construct({parm#1}, {parm#2}, (forward<int>)({parm#3}))) std::allocator_traits<ShmAllocator<int> >::construct<int, int>(ShmAllocator<int>&, int*, int&&)
+  1.79      0.54     0.01 16777240     0.00     0.00  bool std::operator==<int*>(std::move_iterator<int*> const&, std::move_iterator<int*> const&)
+  1.79      0.55     0.01 10000000     0.00     0.00  std::vector<int, ShmAllocator<int> >::push_back(int const&)
+  0.89      0.56     0.01       50     0.10     0.10  unsigned long std::allocator_traits<ShmAllocator<int> >::_S_max_size<ShmAllocator<int> const, void>(ShmAllocator<int> const&, ...)
+  0.89      0.56     0.01       26     0.19     0.19  std::_Vector_base<int, ShmAllocator<int> >::_M_deallocate(int*, unsigned long)
+  0.00      0.56     0.00 16777215     0.00     0.00  std::move_iterator<int*>::operator*() const
+  0.00      0.56     0.00      125     0.00     0.00  std::vector<int, ShmAllocator<int> >::size() const
+  0.00      0.56     0.00       51     0.00     0.00  std::_Vector_base<int, ShmAllocator<int> >::_M_get_Tp_allocator()
+  0.00      0.56     0.00       50     0.00     0.00  std::_Vector_base<int, ShmAllocator<int> >::_M_get_Tp_allocator() const
+  0.00      0.56     0.00       50     0.00     0.10  std::vector<int, ShmAllocator<int> >::max_size() const
+  0.00      0.56     0.00       50     0.00     0.00  std::move_iterator<int*>::move_iterator(int*)
+  0.00      0.56     0.00       50     0.00     0.10  std::allocator_traits<ShmAllocator<int> >::max_size(ShmAllocator<int> const&)
+  0.00      0.56     0.00       50     0.00     0.00  std::move_iterator<int*> std::__make_move_if_noexcept_iterator<int*, std::move_iterator<int*> >(int*)
+  0.00      0.56     0.00       25     0.00     0.00  ShmAllocator<int>::deallocate(int*, unsigned long)
+  0.00      0.56     0.00       25     0.00     0.00  ShmAllocator<int>::allocate(unsigned long)
+  0.00      0.56     0.00       25     0.00     0.20  std::vector<int, ShmAllocator<int> >::_M_check_len(unsigned long, char const*) const
+  0.00      0.56     0.00       25     0.00     0.00  std::_Vector_base<int, ShmAllocator<int> >::_M_allocate(unsigned long)
+  0.00      0.56     0.00       25     0.00     0.00  std::allocator_traits<ShmAllocator<int> >::deallocate(ShmAllocator<int>&, int*, unsigned long)
+  0.00      0.56     0.00       25     0.00     0.00  std::allocator_traits<ShmAllocator<int> >::allocate(ShmAllocator<int>&, unsigned long)
+  0.00      0.56     0.00       25     0.00    18.06  void std::vector<int, ShmAllocator<int> >::_M_emplace_back_aux<int const&>(int const&)
+  0.00      0.56     0.00       25     0.00    10.96  int* std::__uninitialized_move_if_noexcept_a<int*, int*, ShmAllocator<int> >(int*, int*, int*, ShmAllocator<int>&)
+  0.00      0.56     0.00       25     0.00     0.00  unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+  0.00      0.56     0.00        1     0.00     0.00  _GLOBAL__sub_I_main
+  0.00      0.56     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.56     0.00        1     0.00     0.00  ShmAllocator<int>::ShmAllocator()
+  0.00      0.56     0.00        1     0.00     0.00  std::_Vector_base<int, ShmAllocator<int> >::_Vector_impl::_Vector_impl()
+  0.00      0.56     0.00        1     0.00     0.00  std::_Vector_base<int, ShmAllocator<int> >::_Vector_base()
+  0.00      0.56     0.00        1     0.00     0.19  std::_Vector_base<int, ShmAllocator<int> >::~_Vector_base()
+  0.00      0.56     0.00        1     0.00     0.00  std::vector<int, ShmAllocator<int> >::vector()
+  0.00      0.56     0.00        1     0.00     6.91  std::vector<int, ShmAllocator<int> >::~vector()
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2015 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 1.78% of 0.56 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]    100.0    0.00    0.56                 main [1]
+                0.01    0.54 10000000/10000000     std::vector<int, ShmAllocator<int> >::push_back(int const&) [2]
+                0.00    0.01       1/1           std::vector<int, ShmAllocator<int> >::~vector() [21]
+                0.00    0.00       1/1           std::vector<int, ShmAllocator<int> >::vector() [51]
+-----------------------------------------------
+                0.01    0.54 10000000/10000000     main [1]
+[2]     98.8    0.01    0.54 10000000         std::vector<int, ShmAllocator<int> >::push_back(int const&) [2]
+                0.00    0.45      25/25          void std::vector<int, ShmAllocator<int> >::_M_emplace_back_aux<int const&>(int const&) [3]
+                0.04    0.05 9999975/10000000     decltype (_S_construct({parm#1}, {parm#2}, (forward<int const&>)({parm#3}))) std::allocator_traits<ShmAllocator<int> >::construct<int, int const&>(ShmAllocator<int>&, int*, int const&) [10]
+-----------------------------------------------
+                0.00    0.45      25/25          std::vector<int, ShmAllocator<int> >::push_back(int const&) [2]
+[3]     80.5    0.00    0.45      25         void std::vector<int, ShmAllocator<int> >::_M_emplace_back_aux<int const&>(int const&) [3]
+                0.00    0.27      25/25          int* std::__uninitialized_move_if_noexcept_a<int*, int*, ShmAllocator<int> >(int*, int*, int*, ShmAllocator<int>&) [5]
+                0.04    0.12      25/26          void std::_Destroy<int*, ShmAllocator<int> >(int*, int*, ShmAllocator<int>&) [6]
+                0.00    0.01      25/25          std::vector<int, ShmAllocator<int> >::_M_check_len(unsigned long, char const*) const [26]
+                0.00    0.00      25/26          std::_Vector_base<int, ShmAllocator<int> >::_M_deallocate(int*, unsigned long) [25]
+                0.00    0.00      25/10000000     decltype (_S_construct({parm#1}, {parm#2}, (forward<int const&>)({parm#3}))) std::allocator_traits<ShmAllocator<int> >::construct<int, int const&>(ShmAllocator<int>&, int*, int const&) [10]
+                0.00    0.00      25/20000025     int const& std::forward<int const&>(std::remove_reference<int const&>::type&) [16]
+                0.00    0.00      50/51          std::_Vector_base<int, ShmAllocator<int> >::_M_get_Tp_allocator() [36]
+                0.00    0.00      25/25          std::_Vector_base<int, ShmAllocator<int> >::_M_allocate(unsigned long) [42]
+                0.00    0.00      25/125         std::vector<int, ShmAllocator<int> >::size() const [35]
+-----------------------------------------------
+                0.04    0.23      25/25          int* std::__uninitialized_move_if_noexcept_a<int*, int*, ShmAllocator<int> >(int*, int*, int*, ShmAllocator<int>&) [5]
+[4]     48.8    0.04    0.23      25         int* std::__uninitialized_copy_a<std::move_iterator<int*>, int*, ShmAllocator<int> >(std::move_iterator<int*>, std::move_iterator<int*>, int*, ShmAllocator<int>&) [4]
+                0.02    0.12 16777215/16777215     decltype (_S_construct({parm#1}, {parm#2}, (forward<int>)({parm#3}))) std::allocator_traits<ShmAllocator<int> >::construct<int, int>(ShmAllocator<int>&, int*, int&&) [7]
+                0.03    0.04 16777240/16777240     bool std::operator!=<int*>(std::move_iterator<int*> const&, std::move_iterator<int*> const&) [11]
+                0.02    0.00 16777215/16777215     std::move_iterator<int*>::operator++() [19]
+                0.01    0.00 16777215/43554430     int* std::__addressof<int>(int&) [20]
+                0.00    0.00 16777215/16777215     std::move_iterator<int*>::operator*() const [34]
+-----------------------------------------------
+                0.00    0.27      25/25          void std::vector<int, ShmAllocator<int> >::_M_emplace_back_aux<int const&>(int const&) [3]
+[5]     48.8    0.00    0.27      25         int* std::__uninitialized_move_if_noexcept_a<int*, int*, ShmAllocator<int> >(int*, int*, int*, ShmAllocator<int>&) [5]
+                0.04    0.23      25/25          int* std::__uninitialized_copy_a<std::move_iterator<int*>, int*, ShmAllocator<int> >(std::move_iterator<int*>, std::move_iterator<int*>, int*, ShmAllocator<int>&) [4]
+                0.00    0.00      50/50          std::move_iterator<int*> std::__make_move_if_noexcept_iterator<int*, std::move_iterator<int*> >(int*) [39]
+-----------------------------------------------
+                0.00    0.00       1/26          std::vector<int, ShmAllocator<int> >::~vector() [21]
+                0.04    0.12      25/26          void std::vector<int, ShmAllocator<int> >::_M_emplace_back_aux<int const&>(int const&) [3]
+[6]     31.1    0.05    0.13      26         void std::_Destroy<int*, ShmAllocator<int> >(int*, int*, ShmAllocator<int>&) [6]
+                0.09    0.03 26777215/26777215     void std::allocator_traits<ShmAllocator<int> >::destroy<int>(ShmAllocator<int>&, int*) [8]
+                0.01    0.00 26777215/43554430     int* std::__addressof<int>(int&) [20]
+-----------------------------------------------
+                0.02    0.12 16777215/16777215     int* std::__uninitialized_copy_a<std::move_iterator<int*>, int*, ShmAllocator<int> >(std::move_iterator<int*>, std::move_iterator<int*>, int*, ShmAllocator<int>&) [4]
+[7]     24.6    0.02    0.12 16777215         decltype (_S_construct({parm#1}, {parm#2}, (forward<int>)({parm#3}))) std::allocator_traits<ShmAllocator<int> >::construct<int, int>(ShmAllocator<int>&, int*, int&&) [7]
+                0.09    0.02 16777215/16777215     std::enable_if<std::__and_<std::__and_<std::__not_<std::allocator_traits<ShmAllocator<int> >::__construct_helper<int, int>::type>, std::is_constructible<int, int> > >::value, void>::type std::allocator_traits<ShmAllocator<int> >::_S_construct<int, int>(ShmAllocator<int>&, int*, int&&) [9]
+                0.01    0.00 16777215/33554430     int&& std::forward<int>(std::remove_reference<int>::type&) [17]
+-----------------------------------------------
+                0.09    0.03 26777215/26777215     void std::_Destroy<int*, ShmAllocator<int> >(int*, int*, ShmAllocator<int>&) [6]
+[8]     21.4    0.09    0.03 26777215         void std::allocator_traits<ShmAllocator<int> >::destroy<int>(ShmAllocator<int>&, int*) [8]
+                0.03    0.00 26777215/26777215     std::enable_if<std::__and_<std::__not_<std::allocator_traits<ShmAllocator<int> >::__destroy_helper<int>::type> >::value, void>::type std::allocator_traits<ShmAllocator<int> >::_S_destroy<int>(ShmAllocator<int>&, int*) [15]
+-----------------------------------------------
+                0.09    0.02 16777215/16777215     decltype (_S_construct({parm#1}, {parm#2}, (forward<int>)({parm#3}))) std::allocator_traits<ShmAllocator<int> >::construct<int, int>(ShmAllocator<int>&, int*, int&&) [7]
+[9]     20.1    0.09    0.02 16777215         std::enable_if<std::__and_<std::__and_<std::__not_<std::allocator_traits<ShmAllocator<int> >::__construct_helper<int, int>::type>, std::is_constructible<int, int> > >::value, void>::type std::allocator_traits<ShmAllocator<int> >::_S_construct<int, int>(ShmAllocator<int>&, int*, int&&) [9]
+                0.01    0.00 16777215/26777215     operator new(unsigned long, void*) [18]
+                0.01    0.00 16777215/33554430     int&& std::forward<int>(std::remove_reference<int>::type&) [17]
+-----------------------------------------------
+                0.00    0.00      25/10000000     void std::vector<int, ShmAllocator<int> >::_M_emplace_back_aux<int const&>(int const&) [3]
+                0.04    0.05 9999975/10000000     std::vector<int, ShmAllocator<int> >::push_back(int const&) [2]
+[10]    16.5    0.04    0.05 10000000         decltype (_S_construct({parm#1}, {parm#2}, (forward<int const&>)({parm#3}))) std::allocator_traits<ShmAllocator<int> >::construct<int, int const&>(ShmAllocator<int>&, int*, int const&) [10]
+                0.02    0.02 10000000/10000000     std::enable_if<std::__and_<std::__and_<std::__not_<std::allocator_traits<ShmAllocator<int> >::__construct_helper<int, int const&>::type>, std::is_constructible<int, int const&> > >::value, void>::type std::allocator_traits<ShmAllocator<int> >::_S_construct<int, int const&>(ShmAllocator<int>&, int*, int const&) [13]
+                0.01    0.00 10000000/20000025     int const& std::forward<int const&>(std::remove_reference<int const&>::type&) [16]
+-----------------------------------------------
+                0.03    0.04 16777240/16777240     int* std::__uninitialized_copy_a<std::move_iterator<int*>, int*, ShmAllocator<int> >(std::move_iterator<int*>, std::move_iterator<int*>, int*, ShmAllocator<int>&) [4]
+[11]    12.5    0.03    0.04 16777240         bool std::operator!=<int*>(std::move_iterator<int*> const&, std::move_iterator<int*> const&) [11]
+                0.01    0.03 16777240/16777240     bool std::operator==<int*>(std::move_iterator<int*> const&, std::move_iterator<int*> const&) [12]
+-----------------------------------------------
+                0.01    0.03 16777240/16777240     bool std::operator!=<int*>(std::move_iterator<int*> const&, std::move_iterator<int*> const&) [11]
+[12]     7.1    0.01    0.03 16777240         bool std::operator==<int*>(std::move_iterator<int*> const&, std::move_iterator<int*> const&) [12]
+                0.03    0.00 33554480/33554480     std::move_iterator<int*>::base() const [14]
+-----------------------------------------------
+                0.02    0.02 10000000/10000000     decltype (_S_construct({parm#1}, {parm#2}, (forward<int const&>)({parm#3}))) std::allocator_traits<ShmAllocator<int> >::construct<int, int const&>(ShmAllocator<int>&, int*, int const&) [10]
+[13]     7.1    0.02    0.02 10000000         std::enable_if<std::__and_<std::__and_<std::__not_<std::allocator_traits<ShmAllocator<int> >::__construct_helper<int, int const&>::type>, std::is_constructible<int, int const&> > >::value, void>::type std::allocator_traits<ShmAllocator<int> >::_S_construct<int, int const&>(ShmAllocator<int>&, int*, int const&) [13]
+                0.01    0.00 10000000/20000025     int const& std::forward<int const&>(std::remove_reference<int const&>::type&) [16]
+                0.01    0.00 10000000/26777215     operator new(unsigned long, void*) [18]
+-----------------------------------------------
+                0.03    0.00 33554480/33554480     bool std::operator==<int*>(std::move_iterator<int*> const&, std::move_iterator<int*> const&) [12]
+[14]     5.4    0.03    0.00 33554480         std::move_iterator<int*>::base() const [14]
+-----------------------------------------------
+                0.03    0.00 26777215/26777215     void std::allocator_traits<ShmAllocator<int> >::destroy<int>(ShmAllocator<int>&, int*) [8]
+[15]     5.4    0.03    0.00 26777215         std::enable_if<std::__and_<std::__not_<std::allocator_traits<ShmAllocator<int> >::__destroy_helper<int>::type> >::value, void>::type std::allocator_traits<ShmAllocator<int> >::_S_destroy<int>(ShmAllocator<int>&, int*) [15]
+-----------------------------------------------
+                0.00    0.00      25/20000025     void std::vector<int, ShmAllocator<int> >::_M_emplace_back_aux<int const&>(int const&) [3]
+                0.01    0.00 10000000/20000025     decltype (_S_construct({parm#1}, {parm#2}, (forward<int const&>)({parm#3}))) std::allocator_traits<ShmAllocator<int> >::construct<int, int const&>(ShmAllocator<int>&, int*, int const&) [10]
+                0.01    0.00 10000000/20000025     std::enable_if<std::__and_<std::__and_<std::__not_<std::allocator_traits<ShmAllocator<int> >::__construct_helper<int, int const&>::type>, std::is_constructible<int, int const&> > >::value, void>::type std::allocator_traits<ShmAllocator<int> >::_S_construct<int, int const&>(ShmAllocator<int>&, int*, int const&) [13]
+[16]     4.5    0.03    0.00 20000025         int const& std::forward<int const&>(std::remove_reference<int const&>::type&) [16]
+-----------------------------------------------
+                0.01    0.00 16777215/33554430     decltype (_S_construct({parm#1}, {parm#2}, (forward<int>)({parm#3}))) std::allocator_traits<ShmAllocator<int> >::construct<int, int>(ShmAllocator<int>&, int*, int&&) [7]
+                0.01    0.00 16777215/33554430     std::enable_if<std::__and_<std::__and_<std::__not_<std::allocator_traits<ShmAllocator<int> >::__construct_helper<int, int>::type>, std::is_constructible<int, int> > >::value, void>::type std::allocator_traits<ShmAllocator<int> >::_S_construct<int, int>(ShmAllocator<int>&, int*, int&&) [9]
+[17]     3.6    0.02    0.00 33554430         int&& std::forward<int>(std::remove_reference<int>::type&) [17]
+-----------------------------------------------
+                0.01    0.00 10000000/26777215     std::enable_if<std::__and_<std::__and_<std::__not_<std::allocator_traits<ShmAllocator<int> >::__construct_helper<int, int const&>::type>, std::is_constructible<int, int const&> > >::value, void>::type std::allocator_traits<ShmAllocator<int> >::_S_construct<int, int const&>(ShmAllocator<int>&, int*, int const&) [13]
+                0.01    0.00 16777215/26777215     std::enable_if<std::__and_<std::__and_<std::__not_<std::allocator_traits<ShmAllocator<int> >::__construct_helper<int, int>::type>, std::is_constructible<int, int> > >::value, void>::type std::allocator_traits<ShmAllocator<int> >::_S_construct<int, int>(ShmAllocator<int>&, int*, int&&) [9]
+[18]     3.6    0.02    0.00 26777215         operator new(unsigned long, void*) [18]
+-----------------------------------------------
+                0.02    0.00 16777215/16777215     int* std::__uninitialized_copy_a<std::move_iterator<int*>, int*, ShmAllocator<int> >(std::move_iterator<int*>, std::move_iterator<int*>, int*, ShmAllocator<int>&) [4]
+[19]     3.6    0.02    0.00 16777215         std::move_iterator<int*>::operator++() [19]
+-----------------------------------------------
+                0.01    0.00 16777215/43554430     int* std::__uninitialized_copy_a<std::move_iterator<int*>, int*, ShmAllocator<int> >(std::move_iterator<int*>, std::move_iterator<int*>, int*, ShmAllocator<int>&) [4]
+                0.01    0.00 26777215/43554430     void std::_Destroy<int*, ShmAllocator<int> >(int*, int*, ShmAllocator<int>&) [6]
+[20]     2.7    0.02    0.00 43554430         int* std::__addressof<int>(int&) [20]
+-----------------------------------------------
+                0.00    0.01       1/1           main [1]
+[21]     1.2    0.00    0.01       1         std::vector<int, ShmAllocator<int> >::~vector() [21]
+                0.00    0.00       1/26          void std::_Destroy<int*, ShmAllocator<int> >(int*, int*, ShmAllocator<int>&) [6]
+                0.00    0.00       1/1           std::_Vector_base<int, ShmAllocator<int> >::~_Vector_base() [27]
+                0.00    0.00       1/51          std::_Vector_base<int, ShmAllocator<int> >::_M_get_Tp_allocator() [36]
+-----------------------------------------------
+                0.00    0.01      50/50          std::vector<int, ShmAllocator<int> >::_M_check_len(unsigned long, char const*) const [26]
+[22]     0.9    0.00    0.01      50         std::vector<int, ShmAllocator<int> >::max_size() const [22]
+                0.00    0.01      50/50          std::allocator_traits<ShmAllocator<int> >::max_size(ShmAllocator<int> const&) [24]
+                0.00    0.00      50/50          std::_Vector_base<int, ShmAllocator<int> >::_M_get_Tp_allocator() const [37]
+-----------------------------------------------
+                0.01    0.00      50/50          std::allocator_traits<ShmAllocator<int> >::max_size(ShmAllocator<int> const&) [24]
+[23]     0.9    0.01    0.00      50         unsigned long std::allocator_traits<ShmAllocator<int> >::_S_max_size<ShmAllocator<int> const, void>(ShmAllocator<int> const&, ...) [23]
+-----------------------------------------------
+                0.00    0.01      50/50          std::vector<int, ShmAllocator<int> >::max_size() const [22]
+[24]     0.9    0.00    0.01      50         std::allocator_traits<ShmAllocator<int> >::max_size(ShmAllocator<int> const&) [24]
+                0.01    0.00      50/50          unsigned long std::allocator_traits<ShmAllocator<int> >::_S_max_size<ShmAllocator<int> const, void>(ShmAllocator<int> const&, ...) [23]
+-----------------------------------------------
+                0.00    0.00       1/26          std::_Vector_base<int, ShmAllocator<int> >::~_Vector_base() [27]
+                0.00    0.00      25/26          void std::vector<int, ShmAllocator<int> >::_M_emplace_back_aux<int const&>(int const&) [3]
+[25]     0.9    0.01    0.00      26         std::_Vector_base<int, ShmAllocator<int> >::_M_deallocate(int*, unsigned long) [25]
+                0.00    0.00      25/25          std::allocator_traits<ShmAllocator<int> >::deallocate(ShmAllocator<int>&, int*, unsigned long) [43]
+-----------------------------------------------
+                0.00    0.01      25/25          void std::vector<int, ShmAllocator<int> >::_M_emplace_back_aux<int const&>(int const&) [3]
+[26]     0.9    0.00    0.01      25         std::vector<int, ShmAllocator<int> >::_M_check_len(unsigned long, char const*) const [26]
+                0.00    0.01      50/50          std::vector<int, ShmAllocator<int> >::max_size() const [22]
+                0.00    0.00     100/125         std::vector<int, ShmAllocator<int> >::size() const [35]
+                0.00    0.00      25/25          unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [45]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, ShmAllocator<int> >::~vector() [21]
+[27]     0.0    0.00    0.00       1         std::_Vector_base<int, ShmAllocator<int> >::~_Vector_base() [27]
+                0.00    0.00       1/26          std::_Vector_base<int, ShmAllocator<int> >::_M_deallocate(int*, unsigned long) [25]
+-----------------------------------------------
+                0.00    0.00 16777215/16777215     int* std::__uninitialized_copy_a<std::move_iterator<int*>, int*, ShmAllocator<int> >(std::move_iterator<int*>, std::move_iterator<int*>, int*, ShmAllocator<int>&) [4]
+[34]     0.0    0.00    0.00 16777215         std::move_iterator<int*>::operator*() const [34]
+-----------------------------------------------
+                0.00    0.00      25/125         void std::vector<int, ShmAllocator<int> >::_M_emplace_back_aux<int const&>(int const&) [3]
+                0.00    0.00     100/125         std::vector<int, ShmAllocator<int> >::_M_check_len(unsigned long, char const*) const [26]
+[35]     0.0    0.00    0.00     125         std::vector<int, ShmAllocator<int> >::size() const [35]
+-----------------------------------------------
+                0.00    0.00       1/51          std::vector<int, ShmAllocator<int> >::~vector() [21]
+                0.00    0.00      50/51          void std::vector<int, ShmAllocator<int> >::_M_emplace_back_aux<int const&>(int const&) [3]
+[36]     0.0    0.00    0.00      51         std::_Vector_base<int, ShmAllocator<int> >::_M_get_Tp_allocator() [36]
+-----------------------------------------------
+                0.00    0.00      50/50          std::vector<int, ShmAllocator<int> >::max_size() const [22]
+[37]     0.0    0.00    0.00      50         std::_Vector_base<int, ShmAllocator<int> >::_M_get_Tp_allocator() const [37]
+-----------------------------------------------
+                0.00    0.00      50/50          std::move_iterator<int*> std::__make_move_if_noexcept_iterator<int*, std::move_iterator<int*> >(int*) [39]
+[38]     0.0    0.00    0.00      50         std::move_iterator<int*>::move_iterator(int*) [38]
+-----------------------------------------------
+                0.00    0.00      50/50          int* std::__uninitialized_move_if_noexcept_a<int*, int*, ShmAllocator<int> >(int*, int*, int*, ShmAllocator<int>&) [5]
+[39]     0.0    0.00    0.00      50         std::move_iterator<int*> std::__make_move_if_noexcept_iterator<int*, std::move_iterator<int*> >(int*) [39]
+                0.00    0.00      50/50          std::move_iterator<int*>::move_iterator(int*) [38]
+-----------------------------------------------
+                0.00    0.00      25/25          std::allocator_traits<ShmAllocator<int> >::deallocate(ShmAllocator<int>&, int*, unsigned long) [43]
+[40]     0.0    0.00    0.00      25         ShmAllocator<int>::deallocate(int*, unsigned long) [40]
+-----------------------------------------------
+                0.00    0.00      25/25          std::allocator_traits<ShmAllocator<int> >::allocate(ShmAllocator<int>&, unsigned long) [44]
+[41]     0.0    0.00    0.00      25         ShmAllocator<int>::allocate(unsigned long) [41]
+-----------------------------------------------
+                0.00    0.00      25/25          void std::vector<int, ShmAllocator<int> >::_M_emplace_back_aux<int const&>(int const&) [3]
+[42]     0.0    0.00    0.00      25         std::_Vector_base<int, ShmAllocator<int> >::_M_allocate(unsigned long) [42]
+                0.00    0.00      25/25          std::allocator_traits<ShmAllocator<int> >::allocate(ShmAllocator<int>&, unsigned long) [44]
+-----------------------------------------------
+                0.00    0.00      25/25          std::_Vector_base<int, ShmAllocator<int> >::_M_deallocate(int*, unsigned long) [25]
+[43]     0.0    0.00    0.00      25         std::allocator_traits<ShmAllocator<int> >::deallocate(ShmAllocator<int>&, int*, unsigned long) [43]
+                0.00    0.00      25/25          ShmAllocator<int>::deallocate(int*, unsigned long) [40]
+-----------------------------------------------
+                0.00    0.00      25/25          std::_Vector_base<int, ShmAllocator<int> >::_M_allocate(unsigned long) [42]
+[44]     0.0    0.00    0.00      25         std::allocator_traits<ShmAllocator<int> >::allocate(ShmAllocator<int>&, unsigned long) [44]
+                0.00    0.00      25/25          ShmAllocator<int>::allocate(unsigned long) [41]
+-----------------------------------------------
+                0.00    0.00      25/25          std::vector<int, ShmAllocator<int> >::_M_check_len(unsigned long, char const*) const [26]
+[45]     0.0    0.00    0.00      25         unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [45]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [57]
+[46]     0.0    0.00    0.00       1         _GLOBAL__sub_I_main [46]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [47]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I_main [46]
+[47]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [47]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, ShmAllocator<int> >::_Vector_impl::_Vector_impl() [49]
+[48]     0.0    0.00    0.00       1         ShmAllocator<int>::ShmAllocator() [48]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, ShmAllocator<int> >::_Vector_base() [50]
+[49]     0.0    0.00    0.00       1         std::_Vector_base<int, ShmAllocator<int> >::_Vector_impl::_Vector_impl() [49]
+                0.00    0.00       1/1           ShmAllocator<int>::ShmAllocator() [48]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, ShmAllocator<int> >::vector() [51]
+[50]     0.0    0.00    0.00       1         std::_Vector_base<int, ShmAllocator<int> >::_Vector_base() [50]
+                0.00    0.00       1/1           std::_Vector_base<int, ShmAllocator<int> >::_Vector_impl::_Vector_impl() [49]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[51]     0.0    0.00    0.00       1         std::vector<int, ShmAllocator<int> >::vector() [51]
+                0.00    0.00       1/1           std::_Vector_base<int, ShmAllocator<int> >::_Vector_base() [50]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2015 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [46] _GLOBAL__sub_I_main    [50] std::_Vector_base<int, ShmAllocator<int> >::_Vector_base() [2] std::vector<int, ShmAllocator<int> >::push_back(int const&)
+  [47] __static_initialization_and_destruction_0(int, int) [27] std::_Vector_base<int, ShmAllocator<int> >::~_Vector_base() [51] std::vector<int, ShmAllocator<int> >::vector()
+  [40] ShmAllocator<int>::deallocate(int*, unsigned long) [38] std::move_iterator<int*>::move_iterator(int*) [21] std::vector<int, ShmAllocator<int> >::~vector()
+  [41] ShmAllocator<int>::allocate(unsigned long) [19] std::move_iterator<int*>::operator++() [20] int* std::__addressof<int>(int&)
+  [48] ShmAllocator<int>::ShmAllocator() [15] std::enable_if<std::__and_<std::__not_<std::allocator_traits<ShmAllocator<int> >::__destroy_helper<int>::type> >::value, void>::type std::allocator_traits<ShmAllocator<int> >::_S_destroy<int>(ShmAllocator<int>&, int*) [4] int* std::__uninitialized_copy_a<std::move_iterator<int*>, int*, ShmAllocator<int> >(std::move_iterator<int*>, std::move_iterator<int*>, int*, ShmAllocator<int>&)
+  [37] std::_Vector_base<int, ShmAllocator<int> >::_M_get_Tp_allocator() const [43] std::allocator_traits<ShmAllocator<int> >::deallocate(ShmAllocator<int>&, int*, unsigned long) [39] std::move_iterator<int*> std::__make_move_if_noexcept_iterator<int*, std::move_iterator<int*> >(int*)
+  [14] std::move_iterator<int*>::base() const [23] unsigned long std::allocator_traits<ShmAllocator<int> >::_S_max_size<ShmAllocator<int> const, void>(ShmAllocator<int> const&, ...) [5] int* std::__uninitialized_move_if_noexcept_a<int*, int*, ShmAllocator<int> >(int*, int*, int*, ShmAllocator<int>&)
+  [34] std::move_iterator<int*>::operator*() const [13] std::enable_if<std::__and_<std::__and_<std::__not_<std::allocator_traits<ShmAllocator<int> >::__construct_helper<int, int const&>::type>, std::is_constructible<int, int const&> > >::value, void>::type std::allocator_traits<ShmAllocator<int> >::_S_construct<int, int const&>(ShmAllocator<int>&, int*, int const&) [45] unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+  [26] std::vector<int, ShmAllocator<int> >::_M_check_len(unsigned long, char const*) const [9] std::enable_if<std::__and_<std::__and_<std::__not_<std::allocator_traits<ShmAllocator<int> >::__construct_helper<int, int>::type>, std::is_constructible<int, int> > >::value, void>::type std::allocator_traits<ShmAllocator<int> >::_S_construct<int, int>(ShmAllocator<int>&, int*, int&&) [16] int const& std::forward<int const&>(std::remove_reference<int const&>::type&)
+  [35] std::vector<int, ShmAllocator<int> >::size() const [8] void std::allocator_traits<ShmAllocator<int> >::destroy<int>(ShmAllocator<int>&, int*) [17] int&& std::forward<int>(std::remove_reference<int>::type&)
+  [22] std::vector<int, ShmAllocator<int> >::max_size() const [44] std::allocator_traits<ShmAllocator<int> >::allocate(ShmAllocator<int>&, unsigned long) [6] void std::_Destroy<int*, ShmAllocator<int> >(int*, int*, ShmAllocator<int>&)
+  [42] std::_Vector_base<int, ShmAllocator<int> >::_M_allocate(unsigned long) [24] std::allocator_traits<ShmAllocator<int> >::max_size(ShmAllocator<int> const&) [12] bool std::operator==<int*>(std::move_iterator<int*> const&, std::move_iterator<int*> const&)
+  [49] std::_Vector_base<int, ShmAllocator<int> >::_Vector_impl::_Vector_impl() [10] decltype (_S_construct({parm#1}, {parm#2}, (forward<int const&>)({parm#3}))) std::allocator_traits<ShmAllocator<int> >::construct<int, int const&>(ShmAllocator<int>&, int*, int const&) [11] bool std::operator!=<int*>(std::move_iterator<int*> const&, std::move_iterator<int*> const&)
+  [25] std::_Vector_base<int, ShmAllocator<int> >::_M_deallocate(int*, unsigned long) [7] decltype (_S_construct({parm#1}, {parm#2}, (forward<int>)({parm#3}))) std::allocator_traits<ShmAllocator<int> >::construct<int, int>(ShmAllocator<int>&, int*, int&&) [18] operator new(unsigned long, void*)
+  [36] std::_Vector_base<int, ShmAllocator<int> >::_M_get_Tp_allocator() [3] void std::vector<int, ShmAllocator<int> >::_M_emplace_back_aux<int const&>(int const&)

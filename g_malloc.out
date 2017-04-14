@@ -1,0 +1,437 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 36.05      0.09     0.09 10000000     0.00     0.00  void __gnu_cxx::__mt_alloc_base<int>::construct<int, int const&>(int*, int const&)
+ 12.02      0.12     0.03 10000000     0.00     0.00  std::enable_if<std::__and_<std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::__construct_helper<int, int const&>::type>::value, void>::type std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_S_construct<int, int const&>(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&, int*, int const&)
+ 10.01      0.15     0.03 10000000     0.00     0.00  std::enable_if<std::__and_<std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::__destroy_helper<int>::type>::value, void>::type std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_S_destroy<int>(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&, int*)
+  8.01      0.17     0.02 10000000     0.00     0.00  std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::push_back(int const&)
+  8.01      0.19     0.02 10000000     0.00     0.00  int* std::__addressof<int>(int&)
+  6.01      0.20     0.02 30000000     0.00     0.00  int const& std::forward<int const&>(std::remove_reference<int const&>::type&)
+  4.01      0.21     0.01 10000000     0.00     0.00  void std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::destroy<int>(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&, int*)
+  4.01      0.22     0.01 10000000     0.00     0.00  operator new(unsigned long, void*)
+  4.01      0.23     0.01        1    10.01    10.01  std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::deallocate(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&, int*, unsigned long)
+  4.01      0.24     0.01                             main
+  2.00      0.25     0.01        2     2.50     7.51  std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_M_deallocate(int*, unsigned long)
+  2.00      0.25     0.01        1     5.01     5.01  unsigned long std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_S_max_size<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > const, void>(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > const&, int)
+  0.00      0.25     0.00 10000000     0.00     0.00  void __gnu_cxx::__mt_alloc_base<int>::destroy<int>(int*)
+  0.00      0.25     0.00 10000000     0.00     0.00  decltype (_S_construct({parm#1}, {parm#2}, (forward<int const&>)({parm#3}))) std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::construct<int, int const&>(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&, int*, int const&)
+  0.00      0.25     0.00        3     0.00     0.00  __gnu_cxx::__common_pool<__gnu_cxx::__pool, true>::_S_get_pool()
+  0.00      0.25     0.00        3     0.00     0.00  std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_M_get_Tp_allocator()
+  0.00      0.25     0.00        2     0.00     0.00  __gnu_cxx::__pool_base::_M_check_threshold(unsigned long)
+  0.00      0.25     0.00        2     0.00     0.00  __gnu_cxx::__mt_alloc_base<int>::max_size() const
+  0.00      0.25     0.00        2     0.00     0.00  std::move_iterator<int*>::base() const
+  0.00      0.25     0.00        2     0.00     0.00  std::move_iterator<int*>::move_iterator(int*)
+  0.00      0.25     0.00        2     0.00     0.00  std::move_iterator<int*> std::__make_move_if_noexcept_iterator<int*, std::move_iterator<int*> >(int*)
+  0.00      0.25     0.00        2     0.00    27.54  void std::_Destroy<int*, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >(int*, int*, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&)
+  0.00      0.25     0.00        1     0.00     0.00  _GLOBAL__sub_I_main
+  0.00      0.25     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.25     0.00        1     0.00     0.00  __gthread_active_p()
+  0.00      0.25     0.00        1     0.00     0.00  __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::deallocate(int*, unsigned long)
+  0.00      0.25     0.00        1     0.00     0.00  __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::allocate(unsigned long, void const*)
+  0.00      0.25     0.00        1     0.00     0.00  __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::__mt_alloc()
+  0.00      0.25     0.00        1     0.00     0.00  __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::~__mt_alloc()
+  0.00      0.25     0.00        1     0.00     0.00  __gnu_cxx::__pool_base::_Tune::_Tune()
+  0.00      0.25     0.00        1     0.00     0.00  __gnu_cxx::__pool_base::__pool_base()
+  0.00      0.25     0.00        1     0.00     0.00  __gnu_cxx::__mt_alloc_base<int>::__mt_alloc_base()
+  0.00      0.25     0.00        1     0.00     0.00  __gnu_cxx::__common_pool_base<__gnu_cxx::__pool, true>::_S_initialize_once()
+  0.00      0.25     0.00        1     0.00     0.00  __gnu_cxx::__pool<true>::_M_initialize_once()
+  0.00      0.25     0.00        1     0.00     0.00  __gnu_cxx::__pool<true>::__pool()
+  0.00      0.25     0.00        1     0.00     0.00  std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_M_get_Tp_allocator() const
+  0.00      0.25     0.00        1     0.00     0.00  std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::size() const
+  0.00      0.25     0.00        1     0.00     0.00  std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::capacity() const
+  0.00      0.25     0.00        1     0.00     5.01  std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::max_size() const
+  0.00      0.25     0.00        1     0.00     0.00  std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_M_allocate(unsigned long)
+  0.00      0.25     0.00        1     0.00     0.00  std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_Vector_impl::_Vector_impl()
+  0.00      0.25     0.00        1     0.00     0.00  std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_Vector_impl::~_Vector_impl()
+  0.00      0.25     0.00        1     0.00     0.00  std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_Vector_base()
+  0.00      0.25     0.00        1     0.00     7.51  std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::~_Vector_base()
+  0.00      0.25     0.00        1     0.00     0.00  std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::allocate(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&, unsigned long)
+  0.00      0.25     0.00        1     0.00     5.01  std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::max_size(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > const&)
+  0.00      0.25     0.00        1     0.00     0.00  int* std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_M_allocate_and_copy<std::move_iterator<int*> >(unsigned long, std::move_iterator<int*>, std::move_iterator<int*>)
+  0.00      0.25     0.00        1     0.00    40.06  std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::reserve(unsigned long)
+  0.00      0.25     0.00        1     0.00     0.00  std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::vector()
+  0.00      0.25     0.00        1     0.00    35.05  std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::~vector()
+  0.00      0.25     0.00        1     0.00     0.00  int* std::__uninitialized_copy_a<std::move_iterator<int*>, int*, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >(std::move_iterator<int*>, std::move_iterator<int*>, int*, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&)
+  0.00      0.25     0.00        1     0.00     0.00  bool std::operator==<int*>(std::move_iterator<int*> const&, std::move_iterator<int*> const&)
+  0.00      0.25     0.00        1     0.00     0.00  bool std::operator!=<int*>(std::move_iterator<int*> const&, std::move_iterator<int*> const&)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2015 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 3.99% of 0.25 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]    100.0    0.01    0.24                 main [1]
+                0.02    0.15 10000000/10000000     std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::push_back(int const&) [2]
+                0.00    0.04       1/1           std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::reserve(unsigned long) [7]
+                0.00    0.04       1/1           std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::~vector() [9]
+                0.00    0.00       1/1           std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::vector() [56]
+-----------------------------------------------
+                0.02    0.15 10000000/10000000     main [1]
+[2]     66.0    0.02    0.15 10000000         std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::push_back(int const&) [2]
+                0.00    0.15 10000000/10000000     decltype (_S_construct({parm#1}, {parm#2}, (forward<int const&>)({parm#3}))) std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::construct<int, int const&>(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&, int*, int const&) [3]
+-----------------------------------------------
+                0.00    0.15 10000000/10000000     std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::push_back(int const&) [2]
+[3]     58.0    0.00    0.15 10000000         decltype (_S_construct({parm#1}, {parm#2}, (forward<int const&>)({parm#3}))) std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::construct<int, int const&>(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&, int*, int const&) [3]
+                0.03    0.11 10000000/10000000     std::enable_if<std::__and_<std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::__construct_helper<int, int const&>::type>::value, void>::type std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_S_construct<int, int const&>(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&, int*, int const&) [4]
+                0.01    0.00 10000000/30000000     int const& std::forward<int const&>(std::remove_reference<int const&>::type&) [12]
+-----------------------------------------------
+                0.03    0.11 10000000/10000000     decltype (_S_construct({parm#1}, {parm#2}, (forward<int const&>)({parm#3}))) std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::construct<int, int const&>(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&, int*, int const&) [3]
+[4]     56.0    0.03    0.11 10000000         std::enable_if<std::__and_<std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::__construct_helper<int, int const&>::type>::value, void>::type std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_S_construct<int, int const&>(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&, int*, int const&) [4]
+                0.09    0.02 10000000/10000000     void __gnu_cxx::__mt_alloc_base<int>::construct<int, int const&>(int*, int const&) [5]
+                0.01    0.00 10000000/30000000     int const& std::forward<int const&>(std::remove_reference<int const&>::type&) [12]
+-----------------------------------------------
+                0.09    0.02 10000000/10000000     std::enable_if<std::__and_<std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::__construct_helper<int, int const&>::type>::value, void>::type std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_S_construct<int, int const&>(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&, int*, int const&) [4]
+[5]     42.0    0.09    0.02 10000000         void __gnu_cxx::__mt_alloc_base<int>::construct<int, int const&>(int*, int const&) [5]
+                0.01    0.00 10000000/10000000     operator new(unsigned long, void*) [14]
+                0.01    0.00 10000000/30000000     int const& std::forward<int const&>(std::remove_reference<int const&>::type&) [12]
+-----------------------------------------------
+                0.00    0.03       1/2           std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::~vector() [9]
+                0.00    0.03       1/2           std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::reserve(unsigned long) [7]
+[6]     22.0    0.00    0.06       2         void std::_Destroy<int*, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >(int*, int*, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&) [6]
+                0.01    0.03 10000000/10000000     void std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::destroy<int>(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&, int*) [8]
+                0.02    0.00 10000000/10000000     int* std::__addressof<int>(int&) [11]
+-----------------------------------------------
+                0.00    0.04       1/1           main [1]
+[7]     16.0    0.00    0.04       1         std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::reserve(unsigned long) [7]
+                0.00    0.03       1/2           void std::_Destroy<int*, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >(int*, int*, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&) [6]
+                0.00    0.01       1/2           std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_M_deallocate(int*, unsigned long) [13]
+                0.00    0.01       1/1           std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::max_size() const [17]
+                0.00    0.00       2/2           std::move_iterator<int*> std::__make_move_if_noexcept_iterator<int*, std::move_iterator<int*> >(int*) [33]
+                0.00    0.00       1/1           std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::capacity() const [49]
+                0.00    0.00       1/1           std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::size() const [48]
+                0.00    0.00       1/1           int* std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_M_allocate_and_copy<std::move_iterator<int*> >(unsigned long, std::move_iterator<int*>, std::move_iterator<int*>) [55]
+                0.00    0.00       1/3           std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_M_get_Tp_allocator() [28]
+-----------------------------------------------
+                0.01    0.03 10000000/10000000     void std::_Destroy<int*, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >(int*, int*, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&) [6]
+[8]     14.0    0.01    0.03 10000000         void std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::destroy<int>(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&, int*) [8]
+                0.03    0.00 10000000/10000000     std::enable_if<std::__and_<std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::__destroy_helper<int>::type>::value, void>::type std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_S_destroy<int>(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&, int*) [10]
+-----------------------------------------------
+                0.00    0.04       1/1           main [1]
+[9]     14.0    0.00    0.04       1         std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::~vector() [9]
+                0.00    0.03       1/2           void std::_Destroy<int*, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >(int*, int*, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&) [6]
+                0.00    0.01       1/1           std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::~_Vector_base() [16]
+                0.00    0.00       1/3           std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_M_get_Tp_allocator() [28]
+-----------------------------------------------
+                0.03    0.00 10000000/10000000     void std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::destroy<int>(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&, int*) [8]
+[10]    10.0    0.03    0.00 10000000         std::enable_if<std::__and_<std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::__destroy_helper<int>::type>::value, void>::type std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_S_destroy<int>(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&, int*) [10]
+                0.00    0.00 10000000/10000000     void __gnu_cxx::__mt_alloc_base<int>::destroy<int>(int*) [26]
+-----------------------------------------------
+                0.02    0.00 10000000/10000000     void std::_Destroy<int*, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >(int*, int*, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&) [6]
+[11]     8.0    0.02    0.00 10000000         int* std::__addressof<int>(int&) [11]
+-----------------------------------------------
+                0.01    0.00 10000000/30000000     decltype (_S_construct({parm#1}, {parm#2}, (forward<int const&>)({parm#3}))) std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::construct<int, int const&>(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&, int*, int const&) [3]
+                0.01    0.00 10000000/30000000     std::enable_if<std::__and_<std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::__construct_helper<int, int const&>::type>::value, void>::type std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_S_construct<int, int const&>(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&, int*, int const&) [4]
+                0.01    0.00 10000000/30000000     void __gnu_cxx::__mt_alloc_base<int>::construct<int, int const&>(int*, int const&) [5]
+[12]     6.0    0.02    0.00 30000000         int const& std::forward<int const&>(std::remove_reference<int const&>::type&) [12]
+-----------------------------------------------
+                0.00    0.01       1/2           std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::reserve(unsigned long) [7]
+                0.00    0.01       1/2           std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::~_Vector_base() [16]
+[13]     6.0    0.01    0.01       2         std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_M_deallocate(int*, unsigned long) [13]
+                0.01    0.00       1/1           std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::deallocate(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&, int*, unsigned long) [15]
+-----------------------------------------------
+                0.01    0.00 10000000/10000000     void __gnu_cxx::__mt_alloc_base<int>::construct<int, int const&>(int*, int const&) [5]
+[14]     4.0    0.01    0.00 10000000         operator new(unsigned long, void*) [14]
+-----------------------------------------------
+                0.01    0.00       1/1           std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_M_deallocate(int*, unsigned long) [13]
+[15]     4.0    0.01    0.00       1         std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::deallocate(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&, int*, unsigned long) [15]
+                0.00    0.00       1/1           __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::deallocate(int*, unsigned long) [37]
+-----------------------------------------------
+                0.00    0.01       1/1           std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::~vector() [9]
+[16]     3.0    0.00    0.01       1         std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::~_Vector_base() [16]
+                0.00    0.01       1/2           std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_M_deallocate(int*, unsigned long) [13]
+                0.00    0.00       1/1           std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_Vector_impl::~_Vector_impl() [52]
+-----------------------------------------------
+                0.00    0.01       1/1           std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::reserve(unsigned long) [7]
+[17]     2.0    0.00    0.01       1         std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::max_size() const [17]
+                0.00    0.01       1/1           std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::max_size(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > const&) [19]
+                0.00    0.00       1/1           std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_M_get_Tp_allocator() const [47]
+-----------------------------------------------
+                0.01    0.00       1/1           std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::max_size(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > const&) [19]
+[18]     2.0    0.01    0.00       1         unsigned long std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_S_max_size<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > const, void>(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > const&, int) [18]
+                0.00    0.00       1/2           __gnu_cxx::__mt_alloc_base<int>::max_size() const [30]
+-----------------------------------------------
+                0.00    0.01       1/1           std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::max_size() const [17]
+[19]     2.0    0.00    0.01       1         std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::max_size(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > const&) [19]
+                0.01    0.00       1/1           unsigned long std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_S_max_size<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > const, void>(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > const&, int) [18]
+-----------------------------------------------
+                0.00    0.00 10000000/10000000     std::enable_if<std::__and_<std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::__destroy_helper<int>::type>::value, void>::type std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_S_destroy<int>(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&, int*) [10]
+[26]     0.0    0.00    0.00 10000000         void __gnu_cxx::__mt_alloc_base<int>::destroy<int>(int*) [26]
+-----------------------------------------------
+                0.00    0.00       1/3           __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::deallocate(int*, unsigned long) [37]
+                0.00    0.00       1/3           __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::allocate(unsigned long, void const*) [38]
+                0.00    0.00       1/3           __gnu_cxx::__common_pool_base<__gnu_cxx::__pool, true>::_S_initialize_once() [44]
+[27]     0.0    0.00    0.00       3         __gnu_cxx::__common_pool<__gnu_cxx::__pool, true>::_S_get_pool() [27]
+                0.00    0.00       1/1           __gnu_cxx::__pool<true>::__pool() [46]
+-----------------------------------------------
+                0.00    0.00       1/3           std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::~vector() [9]
+                0.00    0.00       1/3           std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::reserve(unsigned long) [7]
+                0.00    0.00       1/3           int* std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_M_allocate_and_copy<std::move_iterator<int*> >(unsigned long, std::move_iterator<int*>, std::move_iterator<int*>) [55]
+[28]     0.0    0.00    0.00       3         std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_M_get_Tp_allocator() [28]
+-----------------------------------------------
+                0.00    0.00       1/2           __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::deallocate(int*, unsigned long) [37]
+                0.00    0.00       1/2           __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::allocate(unsigned long, void const*) [38]
+[29]     0.0    0.00    0.00       2         __gnu_cxx::__pool_base::_M_check_threshold(unsigned long) [29]
+-----------------------------------------------
+                0.00    0.00       1/2           unsigned long std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_S_max_size<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > const, void>(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > const&, int) [18]
+                0.00    0.00       1/2           __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::allocate(unsigned long, void const*) [38]
+[30]     0.0    0.00    0.00       2         __gnu_cxx::__mt_alloc_base<int>::max_size() const [30]
+-----------------------------------------------
+                0.00    0.00       2/2           bool std::operator==<int*>(std::move_iterator<int*> const&, std::move_iterator<int*> const&) [58]
+[31]     0.0    0.00    0.00       2         std::move_iterator<int*>::base() const [31]
+-----------------------------------------------
+                0.00    0.00       2/2           std::move_iterator<int*> std::__make_move_if_noexcept_iterator<int*, std::move_iterator<int*> >(int*) [33]
+[32]     0.0    0.00    0.00       2         std::move_iterator<int*>::move_iterator(int*) [32]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::reserve(unsigned long) [7]
+[33]     0.0    0.00    0.00       2         std::move_iterator<int*> std::__make_move_if_noexcept_iterator<int*, std::move_iterator<int*> >(int*) [33]
+                0.00    0.00       2/2           std::move_iterator<int*>::move_iterator(int*) [32]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [81]
+[34]     0.0    0.00    0.00       1         _GLOBAL__sub_I_main [34]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [35]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I_main [34]
+[35]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [35]
+-----------------------------------------------
+                0.00    0.00       1/1           __gnu_cxx::__common_pool_base<__gnu_cxx::__pool, true>::_S_initialize_once() [44]
+[36]     0.0    0.00    0.00       1         __gthread_active_p() [36]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::deallocate(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&, int*, unsigned long) [15]
+[37]     0.0    0.00    0.00       1         __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::deallocate(int*, unsigned long) [37]
+                0.00    0.00       1/3           __gnu_cxx::__common_pool<__gnu_cxx::__pool, true>::_S_get_pool() [27]
+                0.00    0.00       1/2           __gnu_cxx::__pool_base::_M_check_threshold(unsigned long) [29]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::allocate(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&, unsigned long) [54]
+[38]     0.0    0.00    0.00       1         __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::allocate(unsigned long, void const*) [38]
+                0.00    0.00       1/2           __gnu_cxx::__mt_alloc_base<int>::max_size() const [30]
+                0.00    0.00       1/3           __gnu_cxx::__common_pool<__gnu_cxx::__pool, true>::_S_get_pool() [27]
+                0.00    0.00       1/1           __gnu_cxx::__common_pool_base<__gnu_cxx::__pool, true>::_S_initialize_once() [44]
+                0.00    0.00       1/2           __gnu_cxx::__pool_base::_M_check_threshold(unsigned long) [29]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_Vector_impl::_Vector_impl() [51]
+[39]     0.0    0.00    0.00       1         __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::__mt_alloc() [39]
+                0.00    0.00       1/1           __gnu_cxx::__mt_alloc_base<int>::__mt_alloc_base() [43]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_Vector_impl::~_Vector_impl() [52]
+[40]     0.0    0.00    0.00       1         __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::~__mt_alloc() [40]
+-----------------------------------------------
+                0.00    0.00       1/1           __gnu_cxx::__pool_base::__pool_base() [42]
+[41]     0.0    0.00    0.00       1         __gnu_cxx::__pool_base::_Tune::_Tune() [41]
+-----------------------------------------------
+                0.00    0.00       1/1           __gnu_cxx::__pool<true>::__pool() [46]
+[42]     0.0    0.00    0.00       1         __gnu_cxx::__pool_base::__pool_base() [42]
+                0.00    0.00       1/1           __gnu_cxx::__pool_base::_Tune::_Tune() [41]
+-----------------------------------------------
+                0.00    0.00       1/1           __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::__mt_alloc() [39]
+[43]     0.0    0.00    0.00       1         __gnu_cxx::__mt_alloc_base<int>::__mt_alloc_base() [43]
+-----------------------------------------------
+                0.00    0.00       1/1           __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::allocate(unsigned long, void const*) [38]
+[44]     0.0    0.00    0.00       1         __gnu_cxx::__common_pool_base<__gnu_cxx::__pool, true>::_S_initialize_once() [44]
+                0.00    0.00       1/1           __gthread_active_p() [36]
+                0.00    0.00       1/1           __gnu_cxx::__pool<true>::_M_initialize_once() [45]
+                0.00    0.00       1/3           __gnu_cxx::__common_pool<__gnu_cxx::__pool, true>::_S_get_pool() [27]
+-----------------------------------------------
+                0.00    0.00       1/1           __gnu_cxx::__common_pool_base<__gnu_cxx::__pool, true>::_S_initialize_once() [44]
+[45]     0.0    0.00    0.00       1         __gnu_cxx::__pool<true>::_M_initialize_once() [45]
+-----------------------------------------------
+                0.00    0.00       1/1           __gnu_cxx::__common_pool<__gnu_cxx::__pool, true>::_S_get_pool() [27]
+[46]     0.0    0.00    0.00       1         __gnu_cxx::__pool<true>::__pool() [46]
+                0.00    0.00       1/1           __gnu_cxx::__pool_base::__pool_base() [42]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::max_size() const [17]
+[47]     0.0    0.00    0.00       1         std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_M_get_Tp_allocator() const [47]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::reserve(unsigned long) [7]
+[48]     0.0    0.00    0.00       1         std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::size() const [48]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::reserve(unsigned long) [7]
+[49]     0.0    0.00    0.00       1         std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::capacity() const [49]
+-----------------------------------------------
+                0.00    0.00       1/1           int* std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_M_allocate_and_copy<std::move_iterator<int*> >(unsigned long, std::move_iterator<int*>, std::move_iterator<int*>) [55]
+[50]     0.0    0.00    0.00       1         std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_M_allocate(unsigned long) [50]
+                0.00    0.00       1/1           std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::allocate(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&, unsigned long) [54]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_Vector_base() [53]
+[51]     0.0    0.00    0.00       1         std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_Vector_impl::_Vector_impl() [51]
+                0.00    0.00       1/1           __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::__mt_alloc() [39]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::~_Vector_base() [16]
+[52]     0.0    0.00    0.00       1         std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_Vector_impl::~_Vector_impl() [52]
+                0.00    0.00       1/1           __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::~__mt_alloc() [40]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::vector() [56]
+[53]     0.0    0.00    0.00       1         std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_Vector_base() [53]
+                0.00    0.00       1/1           std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_Vector_impl::_Vector_impl() [51]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_M_allocate(unsigned long) [50]
+[54]     0.0    0.00    0.00       1         std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::allocate(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&, unsigned long) [54]
+                0.00    0.00       1/1           __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::allocate(unsigned long, void const*) [38]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::reserve(unsigned long) [7]
+[55]     0.0    0.00    0.00       1         int* std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_M_allocate_and_copy<std::move_iterator<int*> >(unsigned long, std::move_iterator<int*>, std::move_iterator<int*>) [55]
+                0.00    0.00       1/1           std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_M_allocate(unsigned long) [50]
+                0.00    0.00       1/3           std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_M_get_Tp_allocator() [28]
+                0.00    0.00       1/1           int* std::__uninitialized_copy_a<std::move_iterator<int*>, int*, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >(std::move_iterator<int*>, std::move_iterator<int*>, int*, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&) [57]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[56]     0.0    0.00    0.00       1         std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::vector() [56]
+                0.00    0.00       1/1           std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_Vector_base() [53]
+-----------------------------------------------
+                0.00    0.00       1/1           int* std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_M_allocate_and_copy<std::move_iterator<int*> >(unsigned long, std::move_iterator<int*>, std::move_iterator<int*>) [55]
+[57]     0.0    0.00    0.00       1         int* std::__uninitialized_copy_a<std::move_iterator<int*>, int*, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >(std::move_iterator<int*>, std::move_iterator<int*>, int*, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&) [57]
+                0.00    0.00       1/1           bool std::operator!=<int*>(std::move_iterator<int*> const&, std::move_iterator<int*> const&) [59]
+-----------------------------------------------
+                0.00    0.00       1/1           bool std::operator!=<int*>(std::move_iterator<int*> const&, std::move_iterator<int*> const&) [59]
+[58]     0.0    0.00    0.00       1         bool std::operator==<int*>(std::move_iterator<int*> const&, std::move_iterator<int*> const&) [58]
+                0.00    0.00       2/2           std::move_iterator<int*>::base() const [31]
+-----------------------------------------------
+                0.00    0.00       1/1           int* std::__uninitialized_copy_a<std::move_iterator<int*>, int*, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >(std::move_iterator<int*>, std::move_iterator<int*>, int*, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&) [57]
+[59]     0.0    0.00    0.00       1         bool std::operator!=<int*>(std::move_iterator<int*> const&, std::move_iterator<int*> const&) [59]
+                0.00    0.00       1/1           bool std::operator==<int*>(std::move_iterator<int*> const&, std::move_iterator<int*> const&) [58]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2015 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [34] _GLOBAL__sub_I_main    [47] std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_M_get_Tp_allocator() const [54] std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::allocate(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&, unsigned long)
+  [35] __static_initialization_and_destruction_0(int, int) [31] std::move_iterator<int*>::base() const [19] std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::max_size(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > const&)
+  [36] __gthread_active_p()   [48] std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::size() const [3] decltype (_S_construct({parm#1}, {parm#2}, (forward<int const&>)({parm#3}))) std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::construct<int, int const&>(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&, int*, int const&)
+  [37] __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::deallocate(int*, unsigned long) [49] std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::capacity() const [55] int* std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_M_allocate_and_copy<std::move_iterator<int*> >(unsigned long, std::move_iterator<int*>, std::move_iterator<int*>)
+  [38] __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::allocate(unsigned long, void const*) [17] std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::max_size() const [7] std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::reserve(unsigned long)
+  [39] __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::__mt_alloc() [50] std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_M_allocate(unsigned long) [2] std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::push_back(int const&)
+  [40] __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >::~__mt_alloc() [51] std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_Vector_impl::_Vector_impl() [56] std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::vector()
+  [29] __gnu_cxx::__pool_base::_M_check_threshold(unsigned long) [52] std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_Vector_impl::~_Vector_impl() [9] std::vector<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::~vector()
+  [41] __gnu_cxx::__pool_base::_Tune::_Tune() [13] std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_M_deallocate(int*, unsigned long) [11] int* std::__addressof<int>(int&)
+  [42] __gnu_cxx::__pool_base::__pool_base() [28] std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_M_get_Tp_allocator() [57] int* std::__uninitialized_copy_a<std::move_iterator<int*>, int*, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >(std::move_iterator<int*>, std::move_iterator<int*>, int*, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&)
+  [27] __gnu_cxx::__common_pool<__gnu_cxx::__pool, true>::_S_get_pool() [53] std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_Vector_base() [33] std::move_iterator<int*> std::__make_move_if_noexcept_iterator<int*, std::move_iterator<int*> >(int*)
+  [26] void __gnu_cxx::__mt_alloc_base<int>::destroy<int>(int*) [16] std::_Vector_base<int, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::~_Vector_base() [12] int const& std::forward<int const&>(std::remove_reference<int const&>::type&)
+   [5] void __gnu_cxx::__mt_alloc_base<int>::construct<int, int const&>(int*, int const&) [32] std::move_iterator<int*>::move_iterator(int*) [6] void std::_Destroy<int*, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >(int*, int*, __gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&)
+  [43] __gnu_cxx::__mt_alloc_base<int>::__mt_alloc_base() [10] std::enable_if<std::__and_<std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::__destroy_helper<int>::type>::value, void>::type std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_S_destroy<int>(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&, int*) [58] bool std::operator==<int*>(std::move_iterator<int*> const&, std::move_iterator<int*> const&)
+  [44] __gnu_cxx::__common_pool_base<__gnu_cxx::__pool, true>::_S_initialize_once() [15] std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::deallocate(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&, int*, unsigned long) [59] bool std::operator!=<int*>(std::move_iterator<int*> const&, std::move_iterator<int*> const&)
+  [45] __gnu_cxx::__pool<true>::_M_initialize_once() [18] unsigned long std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_S_max_size<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > const, void>(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > const&, int) [14] operator new(unsigned long, void*)
+  [46] __gnu_cxx::__pool<true>::__pool() [4] std::enable_if<std::__and_<std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::__construct_helper<int, int const&>::type>::value, void>::type std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::_S_construct<int, int const&>(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&, int*, int const&) [1] main
+  [30] __gnu_cxx::__mt_alloc_base<int>::max_size() const [8] void std::allocator_traits<__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> > >::destroy<int>(__gnu_cxx::__mt_alloc<int, __gnu_cxx::__common_pool_policy<__gnu_cxx::__pool, true> >&, int*)
